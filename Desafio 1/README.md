@@ -1,24 +1,29 @@
-# Desafio 2
+# Desafio 1
  
-Consigna: Implementar programa que contenga una clase llamada Contenedor que reciba el nombre del archivo con el que va a trabajar e implemente los siguientes métodos:
+1) Declarar una clase Usuario
 
-save(Object): Number - Recibe un objeto, lo guarda en el archivo, devuelve el id asignado.
+2) Hacer que Usuario cuente con los siguientes atributos:
 
-getById(Number): Object - Recibe un id y devuelve el objeto con ese id, o null si no está.
+nombre: String
 
-getAll(): Object[] - Devuelve un array con los objetos presentes en el archivo.
+apellido: String
 
-deleteById(Number): void - Elimina del archivo el objeto con el id buscado.
+libros: Object[]
 
-deleteAll(): void - Elimina todos los objetos presentes en el archivo.
+mascotas: String[]
 
-Aspectos a incluir en el entregable: 
-El método save incorporará al producto un id numérico, que deberá ser siempre uno más que el id del último objeto agregado (o id 1 si es el primer objeto que se agrega) y no puede estar repetido.
+Los valores de los atributos se deberán cargar a través del constructor, al momento de crear las instancias.
 
-Tomar en consideración el contenido previo del archivo, en caso de utilizar uno existente.
+Hacer que Usuario cuente con los siguientes métodos:
 
-Implementar el manejo de archivos con el módulo fs de node.js, utilizando promesas con async/await y manejo de errores.
+getFullName(): String. Retorna el completo del usuario. Utilizar template strings.
 
-Probar el módulo creando un contenedor de productos, que se guarde en el archivo: “productos.txt”
+addMascota(String): void. Recibe un nombre de mascota y lo agrega al array de mascotas.
 
-Incluir un llamado de prueba a cada método, y mostrando por pantalla según corresponda para verificar el correcto funcionamiento del módulo construído. 
+countMascotas(): Number. Retorna la cantidad de mascotas que tiene el usuario.
+
+addBook(String, String): void. Recibe un string 'nombre' y un string 'autor' y debe agregar un objeto: { nombre: String, autor: String } al array de libros.
+
+getBookNames(): String[]. Retorna un array con sólo los nombres del array de libros del usuario.
+
+Crear un objeto llamado usuario con valores arbitrarios e invocar todos sus métodos.
