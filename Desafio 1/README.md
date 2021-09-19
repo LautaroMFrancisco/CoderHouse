@@ -1,8 +1,8 @@
 # Desafio 1
  
-1) Declarar una clase Usuario
+Declarar una clase Usuario
 
-2) Hacer que Usuario cuente con los siguientes atributos:
+Hacer que Usuario cuente con los siguientes atributos:
 
 nombre: String
 
