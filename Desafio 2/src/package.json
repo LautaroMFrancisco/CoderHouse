@@ -1,21 +1,12 @@
 {
-  "name": "desafio3",
+  "name": "desafio-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "class.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "type": "module"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  }
+  "license": "ISC"
 }
