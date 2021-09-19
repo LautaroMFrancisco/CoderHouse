@@ -1,5 +1,5 @@
 const express = require("express");
-const PORT = 8080;
+const PORT = process.env.port || 8080;
 const app = express();
 const path = require("path");
 const Container = require("./productos.js");
