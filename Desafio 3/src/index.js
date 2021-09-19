@@ -9,6 +9,10 @@ const server = app.listen(PORT, () => {
   console.log(`Server listeningPORT ${PORT}`);
 });
 
+app.get("/", (req, res, next) => {
+  res.send('Go to /productos or /productoRandom ')
+});
+
 app.get("/productos", (req, res, next) => {
   producto.getAll(req, res);
 });
