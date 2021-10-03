@@ -7,8 +7,8 @@ const path = require("path");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false })); //Permite que funcione el form en ejs, leer doc
-app.use(express.static(path.join(__dirname, "public"))); //Permite usar public folder para css
+app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(express.static(path.join(__dirname, "../public"))); 
 
 app.use(express.json());
 app.set("view engine", "ejs");
