@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{pageTitle}
+        block styles
+            link(rel="stylesheet", href="/css/product.css")
+            link(rel="stylesheet", href="/css/main.css")
+            link(rel="stylesheet", href="/css/form.css")
+
+        block content
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/products/") Productos
+                    li.main-header__item
+                        a(href="/products/add-product") Agregar Producto
+        block content
+
+    main
+        form.product-form(action="/products/add-product", method="POST")
+            .form-control
+                label(for="title") Title
+                input(type="text", name="title")#title
+                label(for="price") Price
+                input(type="text", name="price")#price
+                label(for="thumbnail") Thumbnail
+                input(type="text", name="thumbnail")#thumbnail
+            button.btn(type="submit") Add Product
