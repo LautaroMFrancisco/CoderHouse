@@ -10,7 +10,6 @@ const {
   updateProductsByID,
   deleteProductByID,
 } = require("../utils/productsUtils");
-const isAdmin = true;
 
 // Get all Prods From the File
 router.get("/", (req, res) => {
@@ -25,7 +24,7 @@ router.get("/", (req, res) => {
 
 // Add Prods to the file
 router.post("/", (req, res) => {
-  if (isAdmin === true) {
+  if (req.query.isAdmin) {
     (async () => {
       try {
         await addProds(req, res);
@@ -49,24 +48,28 @@ router.get("/:id", (req, res) => {
 
 // Update Prods By Id
 router.put("/:id", (req, res) => {
-  (async () => {
-    try {
-      await updateProductsByID(req, res);
-    } catch (e) {
-      console.error(e);
-    }
-  })();
+  if (req.query.isAdmin) {
+    (async () => {
+      try {
+        await updateProductsByID(req, res);
+      } catch (e) {
+        console.error(e);
+      }
+    })();
+  } else res.send(`{error: Need to be an admin to see this page.}`);
 });
 
 // Delete Prods By Id
 router.delete("/:id", (req, res) => {
-  (async () => {
-    try {
-      await deleteProductByID(req, res);
-    } catch (e) {
-      console.error(e);
-    }
-  })();
+  if (req.query.isAdmin) {
+    (async () => {
+      try {
+        await deleteProductByID(req, res);
+      } catch (e) {
+        console.error(e);
+      }
+    })();
+  } else res.send(`{error: Need to be an admin to see this page.}`);
 });
 
 module.exports = router;
