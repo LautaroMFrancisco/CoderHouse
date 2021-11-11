@@ -1,0 +1,7 @@
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879df2"},"title":"Kirigiri","price":1000.0,"thumbnail":"https://i.imgur.com/1WxF6Z5.png","stock":100.0}
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879df7"},"title":"Misaki","price":1200.0,"thumbnail":"https://i.imgur.com/UmAs8ZD.png","stock":100.0}
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879df8"},"title":"Chlammy","price":2400.0,"thumbnail":"https://i.imgur.com/oYPYSLW.png","stock":100.0}
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879df9"},"title":"Inori","price":2200.0,"thumbnail":"https://i.imgur.com/Julakri.png","stock":100.0}
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879dfa"},"title":"Anjou","price":1700.0,"thumbnail":"https://i.imgur.com/SsWAKVJ.png","stock":100.0}
+{"_id":{"$oid":"6181de0a6bf1fc0ae8879dfb"},"title":"Nagatoro","price":1900.0,"thumbnail":"https://i.imgur.com/Il3uoLR.png","stock":100.0}
+{"_id":{"$oid":"6181e49a6bf1fc0ae8879e10"},"title":"Takagi","price":5000.0,"thumbnail":"https://i.imgur.com/7HdkE2C.png","stock":0.0}

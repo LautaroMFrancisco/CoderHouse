@@ -1,0 +1,133 @@
+> use ecommerce
+
+> db.createCollection("products")
+
+> db.createCollection("messages")
+
+> db.products.insert([{
+... title: "Kirigiri",
+... price: 1000,
+... thumbnail: "https://i.imgur.com/1WxF6Z5.png"
+... },{
+... "title": "May",
+... "price": 750,
+... "thumbnail": "https://i.imgur.com/GNBLOWc.png"
+... },{
+... "title": "Makise",
+... "price": 500,
+... "thumbnail": "https://i.imgur.com/FC47XaU.png"
+... },
+... {
+... "title": "Rei",
+... "price": 175,
+... "thumbnail": "https://i.imgur.com/6qd9Rjd.png"
+... },
+... {
+... "title": "Asuka",
+... "price": 800,
+... "thumbnail": "https://i.imgur.com/gQwKVgf.png"
+... },
+... {
+... "title": "Misaki",
+... "price": 1200,
+... "thumbnail": "https://i.imgur.com/UmAs8ZD.png"
+... },
+... {
+... "title": "Chlammy",
+... "price": 2400,
+... "thumbnail": "https://i.imgur.com/oYPYSLW.png"
+... },
+... {
+... "title": "Inori",
+... "price": 2200,
+... "thumbnail": "https://i.imgur.com/Julakri.png"
+... },
+... {
+... "title": "Anjou",
+... "price": 1700,
+... "thumbnail": "https://i.imgur.com/SsWAKVJ.png"
+... },
+... {
+... "title": "Nagatoro",
+... "price": 1900,
+... "thumbnail": "https://i.imgur.com/Il3uoLR.png"
+... }])
+
+> db.messages.insert([{
+... "name": "hola@test1.com",
+... "date": ISODate(),
+... "msg": "adasdassd"
+... },
+... {
+... "name": "chau@test2.com",
+... "date": ISODate(),
+... "msg": "asd1212"
+... },
+... {
+... "name": "quetalt@test3.com",
+... "date": ISODate(),
+... "msg": "asasd1d12d1d"
+... },
+... {
+... "name": "comoestas@test4.com",
+... "date": ISODate(),
+... "msg": "asd1fd 12d1d"
+... },
+... {
+... "name": "problema@test5.com",
+... "date": ISODate(),
+... "msg": "asfasfasf asfsfsf"
+... },
+... {
+... "name": "admin@test6.com",
+... "date": ISODate(),
+... "msg": "asdasdasdassd"
+... },
+... {
+... "name": "evidencia@test7.com",
+... "date": ISODate(),
+... "msg": "asd"
+... },
+... {
+... "name": "terminal@test8.com",
+... "date": ISODate(),
+... "msg": "a2412421412dasdassd"
+... },
+... {
+... "name": "backend@test9.com",
+... "date": ISODate(),
+... "msg": "ajkppkpokpoksd"
+... },
+... {
+... "name": "mongose@test10.com",
+... "date": ISODate(),
+... "msg": "askjpjpijpij"
+... }])
+
+> db.products.find().pretty()
+
+> db.messages.find().pretty()
+
+> db.products.count()
+
+> db.messages.count()
+
+> db.products.insertOne({
+...     "title": "Takagi",
+...     "price": 5000,
+...     "thumbnail": "https://i.imgur.com/7HdkE2C.png"
+...     })
+
+> db.products.find({"price": {$lt:1000}})
+
+> db.products.find({$and: [{"price": {$gt:1000}},{"price": {$lt:3000}}]})
+
+> db.products.find({"price": {$gt:3000}})
+
+> db.products.find().skip(2).limit(1).sort({price:1})
+
+> db.products.updateMany({},{$set: {stock:100}})
+
+> db.products.updateMany({price: {$gt:4000}},{$set:{stock:0}})
+
+> db.products.deleteMany({price: {$lt:1000}})
