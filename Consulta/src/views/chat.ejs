@@ -9,26 +9,44 @@
     <link rel="stylesheet" href="/css/chat.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/forms.css">
 </head>
 
 <body>
 <header class="main-header">
     <nav class="main-header__nav">
         <ul class="main-header__item-list">
-            <li class="main-header__item"><a href="/form">Products</a></li>
-            <li class="main-header__item"><a class="active" href="/chat">Chat</a></li>
+            <li class="main-header__item"><a href="/api/product-test">Products</a></li>
+            <li class="main-header__item"><a class="active" href="/api/chat">Chat</a></li>
         </ul>
     </nav>
 </header>
 
 
+
+
+<form class="product-form" onsubmit="return addUser()">
+    <div class="form-control">
+        <label for="mail">Mail</label>
+        <input type="text" name="mail" id="mail">
+        <label for="name">Name</label>
+        <input type="text"  name="name" id="name">
+        <label for="lastName">Last Name</label>
+        <input type="text"  name="lastName" id="lastName">
+        <label for="age">Age</label>
+        <input type="text"  name="age" id="age">
+        <label for="nickname">Nickname</label>
+        <input type="text"  name="nickname" id="nickname">
+        <label for="avatar">Avatar</label>
+        <input type="text" name="Avatar" id="avatar">
+        <label for="message">Message</label>
+        <input type="text" placeholder="Enter your message..." id="message">
+
+    </div>
+    <button class="btn" type="submit">Send</button>
+</form>
+
 <div id="caja"></div>
-
-    <form onsubmit="return addMsg()">
-        <input type="text" placeholder="Enter your message..." id="msg">
-        <button type="submit">Send</button>
-    </form>
-
 <!--
     <form>
 
@@ -38,7 +56,7 @@
 
 
 <script src="/socket.io/socket.io.js"></script>
-<script src="./chat.js"></script>
+<script src="/chat.js"></script>
 
 
 </body>

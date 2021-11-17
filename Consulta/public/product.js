@@ -2,7 +2,6 @@ const socket = io();
 
 socket.on("products_back", (dataProds) => {
   renderProds(dataProds);
-  console.log(renderProds);
 });
 
 const renderProds = (dataProds) => {
@@ -11,7 +10,7 @@ const renderProds = (dataProds) => {
       return `
         <article class="card product-item" >
            <header class="card__header">
-               <h1 class="product-item">${x.title}</h1>
+               <h1 class="product-item">${x.name}</h1>
            </header>
            <div class="card__image">
                <img src= "${x.thumbnail}" alt="Product">

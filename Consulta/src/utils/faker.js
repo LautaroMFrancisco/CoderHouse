@@ -1,5 +1,6 @@
 const faker = require("faker");
 const fs = require("fs");
+const path = require("path");
 
 const productFaker = async () => {
   let products = [];
@@ -12,7 +13,7 @@ const productFaker = async () => {
     });
   }
   await fs.promises.writeFile(
-    "../products.txt",
+    path.join(__dirname, "./products.txt"),
     JSON.stringify(products, null, 2)
   );
 };

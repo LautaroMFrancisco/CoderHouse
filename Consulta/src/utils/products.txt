@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Generic Cotton Towels",
+    "price": "249.00",
+    "thumbnail": "http://placeimg.com/640/480/animals"
+  },
+  {
+    "id": 1,
+    "name": "Tasty Wooden Pizza",
+    "price": "716.00",
+    "thumbnail": "http://placeimg.com/640/480/animals"
+  },
+  {
+    "id": 2,
+    "name": "Fantastic Concrete Hat",
+    "price": "458.00",
+    "thumbnail": "http://placeimg.com/640/480/animals"
+  },
+  {
+    "id": 3,
+    "name": "Gorgeous Concrete Soap",
+    "price": "818.00",
+    "thumbnail": "http://placeimg.com/640/480/animals"
+  },
+  {
+    "id": 4,
+    "name": "Awesome Cotton Tuna",
+    "price": "316.00",
+    "thumbnail": "http://placeimg.com/640/480/animals"
+  }
+]
