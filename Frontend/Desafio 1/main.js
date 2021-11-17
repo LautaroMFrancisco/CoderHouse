@@ -1,7 +1,7 @@
 const app = new Vue({
   el: "#app",
   data: {
-    counter: 1,
+    counter: 0,
     clicks: 0,
   },
   methods: {
