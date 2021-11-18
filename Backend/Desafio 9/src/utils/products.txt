@@ -1,32 +1,32 @@
 [
   {
     "id": 0,
-    "name": "Generic Cotton Towels",
-    "price": "249.00",
+    "name": "Practical Granite Cheese",
+    "price": "644.00",
     "thumbnail": "http://placeimg.com/640/480/animals"
   },
   {
     "id": 1,
-    "name": "Tasty Wooden Pizza",
-    "price": "716.00",
+    "name": "Tasty Wooden Gloves",
+    "price": "326.00",
     "thumbnail": "http://placeimg.com/640/480/animals"
   },
   {
     "id": 2,
-    "name": "Fantastic Concrete Hat",
-    "price": "458.00",
+    "name": "Licensed Cotton Chair",
+    "price": "80.00",
     "thumbnail": "http://placeimg.com/640/480/animals"
   },
   {
     "id": 3,
-    "name": "Gorgeous Concrete Soap",
-    "price": "818.00",
+    "name": "Incredible Soft Mouse",
+    "price": "840.00",
     "thumbnail": "http://placeimg.com/640/480/animals"
   },
   {
     "id": 4,
-    "name": "Awesome Cotton Tuna",
-    "price": "316.00",
+    "name": "Practical Plastic Pizza",
+    "price": "994.00",
     "thumbnail": "http://placeimg.com/640/480/animals"
   }
 ]

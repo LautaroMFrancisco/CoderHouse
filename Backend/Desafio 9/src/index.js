@@ -34,6 +34,7 @@ app.use("/api", routes);
 // Socket IO Server
 
 const { Server } = require("socket.io");
+const { normalizeChat } = require("./utils/normalizr.js");
 const io = new Server(server);
 
 io.on("connection", (socket) => {
@@ -78,23 +79,28 @@ io.on("connection", (socket) => {
         console.error(err);
       }
     })();
+
+    const { normalizeChat } = require("./utils/normalizr.js");
+
+    const norm = async () => {
+      const data = await fs.promises.readFile(
+        __dirname + "/utils/messages.txt",
+        "utf-8"
+      );
+      console.log(data);
+      const chat = normalizeChat(data);
+      await fs.promises.writeFile(
+        __dirname + "/utils/normalized.txt",
+        JSON.stringify(chat, null, 2)
+      );
+    };
+
+    (async () => {
+      try {
+        await norm();
+      } catch (err) {
+        console.error(err);
+      }
+    })();
   });
 });
-
-const { normalizeChat, print } = require("./utils/normalizr.js");
-
-const norm = async () => {
-  const data = fs.readFileSync(__dirname + "/utils/messages.txt", "utf-8");
-  const chat = normalizeChat(data);
-  console.log(chat);
-  print(chat);
-  return chat;
-};
-
-(async () => {
-  try {
-    await norm();
-  } catch (err) {
-    console.error(err);
-  }
-})();

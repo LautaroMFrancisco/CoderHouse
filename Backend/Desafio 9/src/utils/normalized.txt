@@ -1,0 +1,190 @@
+{
+  "entities": {
+    "chat": {
+      "content": {
+        "0": {
+          "author": {
+            "mail": "afsaf",
+            "name": "afasfasf",
+            "last_name": "asfasf",
+            "age": "asfasfas",
+            "nickname": "asfasf",
+            "avatar": "fasfsaf",
+            "time": "18/11/2021 0:55:49"
+          },
+          "message": "fasfsafasf"
+        },
+        "1": {
+          "author": {
+            "mail": "dafafdasdf",
+            "name": "sadfasdf",
+            "last_name": "asdfasdf",
+            "age": "adfsafd",
+            "nickname": "asdfasdf",
+            "avatar": "asdfsadf",
+            "time": "18/11/2021 0:55:49"
+          },
+          "message": "asdfasdf"
+        },
+        "2": {
+          "author": {
+            "mail": "lautaro.mfrancisco@gmail.com",
+            "name": "lautaro.mfrancisco@gmail.com",
+            "last_name": "lautaro.mfrancisco@gmail.com",
+            "age": "lautaro.mfrancisco@gmail.com",
+            "nickname": "lautaro.mfrancisco@gmail.com",
+            "avatar": "lautaro.mfrancisco@gmail.com",
+            "time": "18/11/2021 0:55:49"
+          },
+          "message": "lautaro.mfrancisco@gmail.com"
+        },
+        "3": {
+          "author": {
+            "mail": "lautaro.mfrancisco@gmail.com",
+            "name": "lautaro.mfrancisco@gmail.com",
+            "last_name": "lautaro.mfrancisco@gmail.com",
+            "age": "lautaro.mfrancisco@gmail.com",
+            "nickname": "lautaro.mfrancisco@gmail.com",
+            "avatar": "lautaro.mfrancisco@gmail.com",
+            "time": "18/11/2021 0:55:49"
+          },
+          "message": "asdasdas"
+        },
+        "4": {
+          "author": {
+            "mail": "lautaro.mfrancisco@gmail.com",
+            "name": "lautaro.mfrancisco@gmail.com",
+            "last_name": "lautaro.mfrancisco@gmail.com",
+            "age": "lautaro.mfrancisco@gmail.com",
+            "nickname": "lautaro.mfrancisco@gmail.com",
+            "avatar": "lautaro.mfrancisco@gmail.com",
+            "time": "18/11/2021 0:55:49"
+          },
+          "message": "afsasfasfasfas"
+        },
+        "5": {
+          "author": {
+            "mail": "sdvas",
+            "name": "asdas",
+            "last_name": "asdavs",
+            "age": "asdvas",
+            "nickname": "asdva",
+            "avatar": "asdv",
+            "time": "18/11/2021 1:38:54"
+          },
+          "message": "asdv"
+        },
+        "6": {
+          "author": {
+            "mail": "advs",
+            "name": "asdv",
+            "last_name": "asdv",
+            "age": "asdv",
+            "nickname": "asdv",
+            "avatar": "asdv",
+            "time": "18/11/2021 1:38:54"
+          },
+          "message": "asdv"
+        },
+        "7": {
+          "author": {
+            "mail": "asda",
+            "name": "asdv",
+            "last_name": "asvd",
+            "age": "asdv",
+            "nickname": "asvda",
+            "avatar": "asvd",
+            "time": "18/11/2021 1:39:28"
+          },
+          "message": "asvd"
+        },
+        "8": {
+          "author": {
+            "mail": "asdv",
+            "name": "asd",
+            "last_name": "asdv",
+            "age": "asdv",
+            "nickname": "asdv",
+            "avatar": "asdv",
+            "time": "18/11/2021 1:39:28"
+          },
+          "message": "asdva"
+        },
+        "9": {
+          "author": {
+            "mail": "lautaro.francisco@hotmail.com",
+            "name": "lautaro.francisco@hotmail.com",
+            "last_name": "lautaro.francisco@hotmail.com",
+            "age": "lautaro.francisco@hotmail.com",
+            "nickname": "lautaro.francisco@hotmail.com",
+            "avatar": "lautaro.francisco@hotmail.com",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": "lautaro.francisco@hotmail.com"
+        },
+        "10": {
+          "author": {
+            "mail": "asfa",
+            "name": "asfa",
+            "last_name": "asfa",
+            "age": "asfasfas",
+            "nickname": "asfasf",
+            "avatar": "asfa",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": "asfa"
+        },
+        "11": {
+          "author": {
+            "mail": "",
+            "name": "",
+            "last_name": "",
+            "age": "",
+            "nickname": "",
+            "avatar": "",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": ""
+        },
+        "12": {
+          "author": {
+            "mail": "",
+            "name": "",
+            "last_name": "",
+            "age": "",
+            "nickname": "",
+            "avatar": "",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": ""
+        },
+        "13": {
+          "author": {
+            "mail": "",
+            "name": "",
+            "last_name": "",
+            "age": "",
+            "nickname": "",
+            "avatar": "",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": ""
+        },
+        "14": {
+          "author": {
+            "mail": "",
+            "name": "",
+            "last_name": "",
+            "age": "",
+            "nickname": "",
+            "avatar": "",
+            "time": "18/11/2021 1:41:35"
+          },
+          "message": ""
+        },
+        "id": "content"
+      }
+    }
+  },
+  "result": "content"
+}
