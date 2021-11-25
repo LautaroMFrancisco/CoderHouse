@@ -1,0 +1,5 @@
+#Desafio 10
+
+Para utilizar las pagina, debe ingresar localhost:8080/login, ahi ingresar el usuario coder para poder ingresar (Esto lo va a comparar con la base de datos) si ingresa otra cosa va a dar error.
+Una vez ingresado, va a visualizar el nombre, y el boton para deslogear, el cual al ser precionado va a destruir la sesion activa.
+Cada navegador que ingrese va a generar una nueva sesion.
