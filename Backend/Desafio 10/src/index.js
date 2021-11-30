@@ -35,7 +35,7 @@ app.use(
     }),
     secret: "Can you Keep My Secret",
     cookie: {
-      maxAge: 10, // 1 Minute
+      maxAge: 6000, // 1 Minute
     },
     resave: true,
     saveUninitialized: true,
