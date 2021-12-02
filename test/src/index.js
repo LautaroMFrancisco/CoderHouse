@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const session = require("express-session");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
+const bcrypt = require("bcrypt");
 
 mongoose.connect(mongocfg.cnxStr);
 
@@ -28,8 +29,9 @@ passport.use(
   new LocalStrategy(async (username, password, done) => {
     try {
       const isOnDb = await User.findOne({ username });
+      const validPassword = await bcrypt.compare(password, isOnDb.password);
 
-      if (isOnDb.username === username && isOnDb.password === password) {
+      if (isOnDb.username === username && validPassword) {
         done(null, isOnDb);
       }
     } catch (err) {
@@ -52,7 +54,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 /* ------------- Views ------------- */
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded());
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.set("view engine", "ejs");
@@ -79,10 +81,11 @@ app.post("/register", async (req, res) => {
     const isOnDb = await User.findOne({
       username: req.body.username.toString(),
     });
-    console.log(isOnDb);
     if (isOnDb) {
       res.send("The user already exists");
     } else {
+      const salt = await bcrypt.genSalt(10);
+      req.body.password = await bcrypt.hash(req.body.password, salt);
       await User.create({
         username: req.body.username,
         password: req.body.password,
