@@ -3,7 +3,6 @@ const path = require("path");
 const User = require("./schema/users");
 const mongoose = require("mongoose");
 const mongocfg = require("../src/db");
-const bodyParser = require("body-parser");
 const session = require("express-session");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
@@ -18,11 +17,13 @@ app.use(express.json());
 
 app.use(
   session({
-    secret: "Secreto",
+    secret: "Can You Keep My Secret?",
     resave: true,
     saveUninitialized: true,
   })
 );
+app.use(passport.initialize());
+app.use(passport.session());
 
 passport.use(
   "local-login",
@@ -35,7 +36,7 @@ passport.use(
         done(null, isOnDb);
       }
     } catch (err) {
-      console.log("Usuario No Registrado");
+      console.log("User / Password Not Found");
     }
   })
 );
@@ -45,13 +46,15 @@ passport.serializeUser((user, done) => {
   done(null, user._id);
 });
 /* ------------- Deserialize ------------- */
-passport.deserializeUser(async (id, done) => {
-  const isOnDb = await User.find({ id });
-  done(null, isOnDb);
+passport.deserializeUser(async (_id, done) => {
+  try {
+    const isOnDb = await User.find({ _id });
+    done(null, isOnDb);
+  } catch (e) {
+    console.log(e);
+  }
 });
 
-app.use(passport.initialize());
-app.use(passport.session());
 /* ------------- Views ------------- */
 
 app.use(express.urlencoded());
@@ -112,9 +115,8 @@ app.post(
 app.get("/index", (req, res) => {
   res.render("index", {
     pageTitle: "Home",
-    username: req.user.pop().username, //ACA MUESTRA EL ULTIMO USUARIO REGISTRADO ???
+    username: req.user.pop().username,
   });
-  console.log(req.user.pop().username); // ACA RECIVE EL USUARIO CORRECTO
 });
 
 app.get("/logout", (req, res) => {

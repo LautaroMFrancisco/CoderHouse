@@ -6,6 +6,7 @@ const mongodb = {
     useCreateIndex: true,
     serverSelectionTimeoutMS: 5000,
   },
+  _id: {},
 };
 
 module.exports = mongodb;
