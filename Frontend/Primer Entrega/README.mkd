@@ -2,5 +2,6 @@
 
 Ya que no aprendimos routes, descomentar los componentes que se quieren utilizar
 A tener en cuenta para el proximo tp:
-      .Acomodar un poco mejor el cart
-      .Aprender como hacer para que se pueda cambiar la cantidad de productos, que busque pero no me salio.
+
+     - Acomodar un poco mejor el cart
+     - Aprender como hacer para que se pueda cambiar la cantidad de productos, que busque pero no me salio.
