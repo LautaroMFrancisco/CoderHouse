@@ -1,24 +1,6 @@
-# primer-entrega
+#Primer Entrega
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Ya que no aprendimos routes, descomentar los componentes que se quieren utilizar
+A tener en cuenta para el proximo tp:
+      .Acomodar un poco mejor el cart
+      .Aprender como hacer para que se pueda cambiar la cantidad de productos, que busque pero no me salio.
