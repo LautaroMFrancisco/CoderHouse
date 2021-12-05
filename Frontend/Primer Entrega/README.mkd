@@ -1,6 +1,7 @@
 #Primer Entrega
 
-Ya que no aprendimos routes, descomentar los componentes que se quieren utilizar
+Ya que no aprendimos routes, descomentar los componentes que se quieren utilizar.
+
 A tener en cuenta para el proximo tp:
 
      - Acomodar un poco mejor el cart
