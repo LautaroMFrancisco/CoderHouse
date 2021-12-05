@@ -1,2 +1,9 @@
 #Desafio 11
 
+Ingresar a localhost:8080/login o register dependiendo si ya estas registado o no
+
+Luego mediante el boton Login vas a poder ingresar con nombre y usuario
+
+Esto te redirije a el index al cual si no logeaste antes te va a salir un error
+
+Desde este vas a poder visualizar tu usuario y luego deslogear.
