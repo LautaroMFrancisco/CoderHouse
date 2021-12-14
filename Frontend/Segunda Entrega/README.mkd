@@ -1,0 +1,15 @@
+# Segunda Entrega
+
+Cosas a tener en cuenta para la utilizacion:
+
+1) Admin = admin@admin.com.ar password = adminpass
+2) User = user@user.com.ar password = userpass
+
+ Para la entrega final: 
+
+1) Mejorar la interface 
+2) Mejorar el carrito
+3) Cambiar mockdata por data real
+4) Intentar cambiar el back de mockapi a nodejs 
+5) Mejorar las validaciones de los formularios
+
