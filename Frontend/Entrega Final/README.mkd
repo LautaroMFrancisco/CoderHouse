@@ -6,5 +6,5 @@ Cosas a tener en cuenta para la utilizacion:
 
 Para Mejorar:
 
-1. Mejorar Landing page
-2. Mejorar Carrito para que se vea mejor
+1. Mejorar Landing page ✔
+2. Mejorar Carrito para que se vea mejor ✔
