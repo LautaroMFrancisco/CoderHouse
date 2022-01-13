@@ -59,44 +59,45 @@
                   required
                 ></v-text-field>
               </v-flex>
-              <v-row justify="center">
-                <v-col xs="6">
+              <v-row dense>
+                <v-col>
                   <v-flex class="text-xs-center" mt-2>
-                    <v-btn color="pink" type="submit" @click="addProd"
+                    <v-btn block color="pink" type="submit" @click="addProd"
                       >Add Product</v-btn
                     >
-                  </v-flex></v-col
-                ><v-col xs="6">
+                  </v-flex>
+                </v-col>
+                <v-col>
                   <v-flex class="text-xs-center" mt-2>
-                    <v-btn color="pink" type="submit" @click="deleteProd"
+                    <v-btn block color="pink" type="submit" @click="deleteProd"
                       >Delete Product</v-btn
                     >
-                  </v-flex> </v-col
-                ><v-col xs="6">
+                  </v-flex>
+                </v-col>
+                <v-col>
                   <v-flex class="text-xs-center" mt-2>
-                    <v-btn color="pink" type="submit" @click="updateProd"
+                    <v-btn block color="pink" type="submit" @click="updateProd"
                       >Update Product</v-btn
                     >
-                  </v-flex></v-col
-                ><v-col xs="6">
+                  </v-flex>
+                </v-col>
+                <v-col>
                   <v-flex class="text-xs-center" mt-2>
                     <v-btn
+                      block
                       color="purple"
                       class="mt-12"
                       @click="overlay = !overlay"
                     >
                       Show Products
                     </v-btn>
-                  </v-flex></v-col
-                >
-
-                <v-overlay :absolute="absolute" :value="overlay">
-                  <ProductsTable />
-                  <v-btn color="success" @click="overlay = false">
-                    Close
-                  </v-btn>
-                </v-overlay>
+                  </v-flex>
+                </v-col>
               </v-row>
+              <v-overlay :absolute="absolute" :value="overlay">
+                <ProductsTable />
+                <v-btn color="success" @click="overlay = false"> Close </v-btn>
+              </v-overlay>
             </v-layout>
           </form>
         </v-flex>
