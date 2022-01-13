@@ -213,12 +213,16 @@ export default {
   },
 
   mounted() {
-    axios({
-      method: "get",
-      url: "https://61b6bfeec95dd70017d40fec.mockapi.io/productos",
-    }).then((response) => {
-      this.product = response.data;
-    });
+    if (!this.$store.state.isAdmin) {
+      this.$router.push("/");
+    } else {
+      axios({
+        method: "get",
+        url: "https://61b6bfeec95dd70017d40fec.mockapi.io/productos",
+      }).then((response) => {
+        this.product = response.data;
+      });
+    }
   },
 };
 </script>
