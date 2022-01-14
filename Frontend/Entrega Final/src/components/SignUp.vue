@@ -72,25 +72,33 @@ export default {
   }),
   methods: {
     registerUser() {
-      const user = {
-        username: this.username,
-        email: this.email,
-        password: this.password,
-        cart: [],
-        admin: false,
-      };
       axios({
-        method: "post",
+        method: "get",
         url: "https://61b6bfeec95dd70017d40fec.mockapi.io/users",
-        data: user,
-      })
-        .then((response) => {
-          console.log(response.data);
-        })
-        .catch(function (error) {
+      }).then((response) => {
+        const userResponse = response.data.find(
+          (userID) => userID.email === this.email
+        );
+        if (userResponse)
+          return this.$swal("Tehee!", "Email is already in use", "error");
+        if (this.password !== this.confirmPassword)
+          return this.$swal("Tehee!", "Password does not match", "error");
+        const user = {
+          username: this.username,
+          email: this.email,
+          password: this.password,
+          cart: [],
+          admin: false,
+        };
+        axios({
+          method: "post",
+          url: "https://61b6bfeec95dd70017d40fec.mockapi.io/users",
+          data: user,
+        }).catch(function (error) {
           console.log(error);
         });
-      this.$router.push("/login");
+        this.$router.push("/login");
+      });
     },
   },
 };

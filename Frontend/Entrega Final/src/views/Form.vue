@@ -83,18 +83,17 @@
                 </v-col>
                 <v-col>
                   <v-flex class="text-xs-center" mt-2>
-                    <v-btn
-                      block
-                      color="purple"
-                      class="mt-12"
-                      @click="overlay = !overlay"
-                    >
+                    <v-btn block color="purple" @click="overlay = !overlay">
                       Show Products
                     </v-btn>
                   </v-flex>
                 </v-col>
               </v-row>
-              <v-overlay :absolute="absolute" :value="overlay">
+              <v-overlay
+                class="justify-right"
+                :absolute="absolute"
+                :value="overlay"
+              >
                 <ProductsTable />
                 <v-btn color="success" @click="overlay = false"> Close </v-btn>
               </v-overlay>
