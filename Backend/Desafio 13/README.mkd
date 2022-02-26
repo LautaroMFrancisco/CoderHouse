@@ -1,0 +1,13 @@
+Start Server = nodemon index.js --PORT 'PORT NUMBER' 
+
+Start Server with Cluster = nodemon index.js --PORT 'PORT NUMBER' --MODE CLUSTER
+
+Start Server with FORK = nodemon index.js --PORT 'PORT NUMBER' --MODE FORK
+
+------------------------------------------------------------------------------------------
+
+PM2
+
+pm2 start index.js -i 0 --watch "Start Cluster Mode with watch"
+
+pm2 start index.js --watch "Start Fork Mode with watch"
