@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Kirigiri",
+    "price": 1000,
+    "thumbnail": "https://i.imgur.com/1WxF6Z5.png"
+  },
+  {
+    "title": "May",
+    "price": 750,
+    "thumbnail": "https://i.imgur.com/GNBLOWc.png"
+  },
+  {
+    "title": "Makise",
+    "price": 500,
+    "thumbnail": "https://i.imgur.com/FC47XaU.png"
+  }
+]
